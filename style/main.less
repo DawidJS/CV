@@ -1,0 +1,198 @@
+@import 'reset';
+
+.web-container {
+    display: flex;
+    width: 1600px;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .left{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        .contact{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lato';
+            font-size: 20px;
+            color: #fff;
+            .yourPicture{
+                max-width: 100%;
+            }
+            .phone{
+                display: flex;
+                background: #00639e;
+                align-items: center;
+                padding: 5px 0;
+                .iconContact{
+                    margin: 0 40px;
+                }
+            }
+            .web{
+                display: flex;
+                background: #007dc5;
+                align-items: center;
+                padding: 5px 0;
+                .iconContact{
+                    margin: 0 40px;
+                }
+            }
+            .mail{
+                display: flex;
+                background: #009bdf;
+                align-items: center;
+                padding: 5px 0;
+                .iconContact{
+                    margin: 0 40px;
+                }
+            }
+        }
+        .personalCharacteristics{
+            display: flex;
+            flex-direction: column;
+            background: #e6e7e8;
+            font-size: 25px;
+            font-family: 'Lato';
+            padding-bottom: 40px;
+            .titleCharacters{
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: 40px;
+                margin: 20px 0 20px 40px;
+        }
+            .firstInformation{
+                display: flex;
+                flex-direction: column;
+                .h2Character{
+                    margin: 0 0 15px 40px;
+                    width: 150px;
+                }
+                .oMnie{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    .colon{
+                        margin-right: 20px;
+                    }
+                }
+                .beginer{
+                    font-weight: bolder;
+                    color: #b7b8b9;
+                }
+                .pro{
+                    font-weight: bold;
+                    color: #007dc5;
+                }
+            }
+            .reference{
+                display: flex;
+                flex-direction: column;
+                .boss{
+                    font-size: 30px;
+                    &:extend(.web-container .left .personalCharacteristics .titleCharacters);
+                }
+                .company{
+                font-weight: bold;
+                color: #007dc5;
+                margin-left: 40px;
+                }
+                .ref-container{
+                    display: flex;
+                    margin-top: 20px;
+                    .refBold{
+                        font-weight: bold;
+                        margin-right: 10px;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        font-family: 'Lato';
+        margin-left: 40px;
+        .myProfil{
+            .myName{
+                color: #007dc5;
+                font-size: 55px;
+                font-family: 'Roboto';
+                font-weight: bold;
+                margin-top: 80px;
+            }
+            .job{
+                font-size: 45px;
+                margin: 15px 0 30px 0;
+                font-weight: 500;
+            }
+            p{
+                text-align: justify;
+            }
+            p::first-letter{
+                padding-left: 40px;
+            }
+        }
+        .experience{
+            display: flex;
+            flex-direction: column;
+           .expTitle{
+                padding: 20px;
+                padding-left: 40px;
+                margin-left:  -40px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                background: #b7b8b9;
+                font-family: 'Roboto';
+                font-weight: bold;
+                font-size: 45px;
+            }
+            .jobs{
+                display: flex;
+                flex-direction: column;
+                .specificallyJob{
+                    display: flex;
+                    .leftJob{
+                        width: 600px;
+                        display: flex;
+                        flex-direction: column;
+                        .titleJobs{
+                            font-family: 'Roboto';
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                        }
+                        .date{
+                            padding-left: 5px;
+                        }
+                    }
+                    .rightJob{
+                        width: 100%;
+                        .titelCompany{
+                            font-family: 'Roboto';
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                        }
+                        .aboutJob{
+                            margin-bottom: 70px;
+                        }
+                    }
+                }
+            }
+        }
+        .hobbyImg{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+footer{
+    display: flex;
+    width: 1600px;
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-align: justify;
+}
